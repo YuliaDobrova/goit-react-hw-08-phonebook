@@ -6,12 +6,15 @@ import App from "./App";
 import "./index.css";
 import "modern-normalize/modern-normalize.css";
 import store from "./redux/store";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       {/* <PersistGate loading={<h2>...isloading</h2>} persistor={store.persistor}> */}
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
       {/* </PersistGate> */}
     </Provider>
   </React.StrictMode>,
