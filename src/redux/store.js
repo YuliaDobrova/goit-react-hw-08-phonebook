@@ -42,3 +42,5 @@ export default store;
 // ===========================
 // json смотреть по ссылке
 // http://localhost:4040/contacts
+// команда
+// npm run api-server

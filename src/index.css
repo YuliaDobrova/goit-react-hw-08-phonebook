@@ -1,3 +1,30 @@
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+
 body {
   background-color: rgb(13, 64, 131);
   color: white;
