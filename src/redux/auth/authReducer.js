@@ -10,9 +10,9 @@ import {
   logoutRequest,
   logoutSuccess,
   logoutError,
-  // getCurrentUserRequest,
-  // getCurrentUserSuccess,
-  // getCurrentUserError,
+  getCurrentUserRequest,
+  getCurrentUserSuccess,
+  getCurrentUserError,
 } from "./authActions";
 
 const initialUserState = { name: null, email: null };
