@@ -1,0 +1,2 @@
+(this["webpackJsonpgoit-react-hw-08-phonebook"]=this["webpackJsonpgoit-react-hw-08-phonebook"]||[]).push([[4],{108:function(t,e,o){"use strict";o.r(e);o(0);var n=o(1);e.default=function(){return Object(n.jsxs)(n.Fragment,{children:[Object(n.jsx)("h2",{children:"Personal Phonebook"}),Object(n.jsx)("br",{}),Object(n.jsx)("p",{children:"An application that won't let you forget an important info. \ud83e\udd17 "}),Object(n.jsx)("p",{children:"Please login or register to continue. "})]})}}}]);
+//# sourceMappingURL=4.d99a2463.chunk.js.map
