@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import contactsOperations from "../../redux/contacts/contactsOperations";
 import { connect } from "react-redux";
+import Loader from "react-loader-spinner";
 // import { v4 as uuidv4 } from "uuid";
 import styles from "./ContactForm.module.css";
-import { getAllContacts, getLoading } from "../../redux/contacts/contactsSelectors";
+import {
+  getAllContacts,
+  getLoading,
+} from "../../redux/contacts/contactsSelectors";
 
 class ContactForm extends Component {
   state = { name: "", number: "" };
@@ -63,7 +67,9 @@ class ContactForm extends Component {
         <button type="submit" className={styles.formButton}>
           Add contact
         </button>
-        {this.props.isLoadingContacts && <h1>Downloading...</h1>}
+        {this.props.isLoadingContacts && (
+          <Loader type="ThreeDots" color="#40e0d0" height={70} width={70} />
+        )}
       </form>
     );
   }

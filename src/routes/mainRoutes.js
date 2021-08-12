@@ -26,7 +26,8 @@ export const mainRoutes = [
     name: "Register",
     path: "/register",
     component: lazy(
-      () => import("../pages/AuthPage") /* webpackChunkName:"AuthPage" */
+      () =>
+        import("../pages/RegisterPage") /* webpackChunkName:"RegisterPage" */
     ),
     exact: true,
     private: true,
@@ -36,7 +37,7 @@ export const mainRoutes = [
     name: "Login",
     path: "/login",
     component: lazy(
-      () => import("../pages/AuthPage") /* webpackChunkName:"AuthPage" */
+      () => import("../pages/LoginPage") /* webpackChunkName:"LoginPage" */
     ),
     exact: true,
     private: true,

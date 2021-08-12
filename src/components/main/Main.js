@@ -2,11 +2,16 @@ import React, { Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
 import { mainRoutes } from "../../routes/mainRoutes";
 import { MainContainer } from "./MainStyled";
+import Loader from "react-loader-spinner";
 
 const Main = () => {
   return (
     <MainContainer>
-      <Suspense fallback={<h2>...loading</h2>}>
+      <Suspense
+        fallback={
+          <Loader type="ThreeDots" color="#40e0d0" height={70} width={70} />
+        }
+      >
         <Switch>
           {mainRoutes.map((route) => (
             <Route

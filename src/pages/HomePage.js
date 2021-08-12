@@ -4,7 +4,13 @@ const HomePage = () => {
   return (
     <>
       <h2>HomePage</h2>
-      <p>The Application which won't let you forget the phone numbers 🤗 </p>
+      {/* <a class="link" href="">
+        HomePage
+        <svg class="phone" width="30" height="30">
+          <use href="../images/phoneSVG.svg"></use>
+        </svg>
+      </a> */}
+      <p>An application that won't let you forget important info 🤗 </p>
     </>
   );
 };
