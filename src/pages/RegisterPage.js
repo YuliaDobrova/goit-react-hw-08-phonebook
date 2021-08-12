@@ -4,7 +4,7 @@ import RegisterForm from "../components/auth/RegisterForm";
 const RegisterPage = () => {
   return (
     <>
-      <h2>RegisterPage</h2>
+      <h2>Go through a simple registration</h2>
       <RegisterForm />
     </>
   );

@@ -3,14 +3,10 @@ import React from "react";
 const HomePage = () => {
   return (
     <>
-      <h2>HomePage</h2>
-      {/* <a class="link" href="">
-        HomePage
-        <svg class="phone" width="30" height="30">
-          <use href="../images/phoneSVG.svg"></use>
-        </svg>
-      </a> */}
-      <p>An application that won't let you forget important info 🤗 </p>
+      <h2>Personal Phonebook</h2>
+      <br />
+      <p>An application that won't let you forget an important info. 🤗 </p>
+      <p>Please login or register to continue. </p>
     </>
   );
 };

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import authOperations from "../../redux/auth/authOperations";
 
 const styles = {
   form: {
@@ -8,7 +10,13 @@ const styles = {
     marginRight: 5,
     marginLeft: 5,
   },
-  input: { marginRight: 5 },
+  input: {
+    marginRight: 5,
+    marginBottom: 10,
+  },
+  text: {
+    marginRight: 15,
+  },
 };
 
 class LoginForm extends Component {
@@ -24,6 +32,8 @@ class LoginForm extends Component {
 
   onHandleSubmit = (e) => {
     e.preventDefault();
+    this.props.onLogin(this.state);
+    this.setState({ email: "", password: "" });
   };
 
   render() {
@@ -31,29 +41,39 @@ class LoginForm extends Component {
     return (
       <form style={styles.form} onSubmit={this.onHandleSubmit}>
         <label style={styles.label}>
-          Email:
+          <span style={styles.text}> Email:</span>
           <input
             style={styles.input}
             type="text"
             name="email"
+            autoComplete="off"
+            placeholder="Enter email"
             onChange={this.onHandleChange}
             value={email}
           />
         </label>
+        <br />
         <label style={styles.label}>
-          Password:
+          <span style={styles.text}> Password:</span>
           <input
             style={styles.input}
             type="text"
             name="password"
+            autoComplete="off"
+            placeholder="Enter password"
             onChange={this.onHandleChange}
             value={password}
           />
         </label>
+        <br />
         <button type="submit">Login</button>
       </form>
     );
   }
 }
 
-export default LoginForm;
+const mapDispatchToProps = {
+  onLogin: authOperations.logIn,
+};
+
+export default connect(null, mapDispatchToProps)(LoginForm);

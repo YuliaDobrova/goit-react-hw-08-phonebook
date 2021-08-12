@@ -10,16 +10,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .contactListItemSpan:not(:first-child) {
   margin-left: 10px;
 }
-/* 
+
 .listItemButton {
-  background-color: rgb(95, 130, 158);
+  margin-left: 10px;
+}
+/* background-color: rgb(95, 130, 158);
   font-weight: bold;
   line-height: 1.5;
   letter-spacing: 0.03em;

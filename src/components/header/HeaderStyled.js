@@ -8,5 +8,5 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 0 40px;
+  padding: 0 30px;
 `;

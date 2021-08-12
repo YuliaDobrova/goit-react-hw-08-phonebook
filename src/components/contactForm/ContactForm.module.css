@@ -3,13 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .formName {
   font-weight: 700;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin-bottom: 10px;
+
   color: white;
+}
+
+.formPhonebookText {
+  margin-right: 15px;
 }
 
 /* .formInput {

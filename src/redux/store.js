@@ -1,4 +1,6 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import authReducer from "./auth/authReducer";
+import contactsReducer from "./contacts/contactsReducer";
 import {
   // persistStore,
   // persistReducer,
@@ -10,7 +12,6 @@ import {
   REGISTER,
 } from "redux-persist";
 // import storage from "redux-persist/lib/storage";
-import contactsReducer from "./contacts/contactsReducer";
 
 const middleware = [
   ...getDefaultMiddleware({
@@ -30,7 +31,10 @@ const middleware = [
 // const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 const store = configureStore({
-  reducer: contactsReducer,
+  reducer: {
+    auth: authReducer,
+    contacts: contactsReducer,
+  },
   middleware,
   devTools: process.env.NODE_ENV === "development",
 });
@@ -38,9 +42,3 @@ const store = configureStore({
 // const persistor = persistStore(store);
 
 export default store;
-
-// ===========================
-// json смотреть по ссылке
-// http://localhost:4040/contacts
-// команда
-// npm run api-server

@@ -8,7 +8,7 @@ const Filter = ({ filter, setFilter }) => {
   return (
     <>
       <label className={styles.filterName}>
-        Find contacts by name
+        <span className={styles.formPhonebookText}>Find contact by name</span>
         <input
           className={styles.filterInput}
           type="text"
