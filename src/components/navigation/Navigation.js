@@ -8,7 +8,7 @@ const Navigation = () => {
     <NavigationContainer>
       <ul className="navList">
         {mainRoutes.map((route) => (
-          <li className="navListItem">
+          <li className="navListItem" key={route.path}>
             <NavLink
               to={route.path}
               exact={route.exact}

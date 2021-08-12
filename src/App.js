@@ -1,18 +1,15 @@
 import React from "react";
-import ContactForm from "./components/contactForm/ContactForm";
-import ContactList from "./components/contactList/ContactList";
-import Filter from "./components/filter/Filter";
+// import Auth from "./components/auth/Auth";
+
 import Header from "./components/header/Header";
+import Main from "./components/main/Main";
 
 const App = () => {
   return (
     <>
       <Header />
-      {/* <h1 className="appHeading">Phonebook</h1>
-      <ContactForm />
-      <h2 className="appHeading">Contacts</h2>
-      <Filter />
-      <ContactList /> */}
+      <Main />
+      {/* <Auth /> */}
     </>
   );
 };
