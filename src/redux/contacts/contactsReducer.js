@@ -18,7 +18,7 @@ const itemsReducer = createReducer([], {
   //возвращает массив контактов, который записывается поверх (распылять не надо)
   [addContactSuccess]: (state, { payload }) => [...state, payload],
   [deleteContactSuccess]: (state, actions) =>
-    state.filter((item) => item.id !== Number(actions.payload)),
+    state.filter((item) => item.id !== actions.payload),
 });
 
 const filterReducer = createReducer("", {

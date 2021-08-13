@@ -49,6 +49,8 @@ class RegisterForm extends Component {
             name="name"
             autoComplete="off"
             placeholder="Enter username"
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
             onChange={this.onHandleChange}
             value={name}
           />
@@ -71,7 +73,7 @@ class RegisterForm extends Component {
           <span style={styles.text}>Password:</span>
           <input
             style={styles.input}
-            type="text"
+            type="password"
             name="password"
             autoComplete="off"
             placeholder="Enter password"

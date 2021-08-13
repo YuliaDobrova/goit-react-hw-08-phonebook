@@ -57,7 +57,7 @@ class LoginForm extends Component {
           <span style={styles.text}> Password:</span>
           <input
             style={styles.input}
-            type="text"
+            type="password"
             name="password"
             autoComplete="off"
             placeholder="Enter password"
